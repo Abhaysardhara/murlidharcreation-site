@@ -1,161 +1,333 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy · Mora apps · Murlidhar Creation</title>
-  <meta name="description" content="Privacy policy for Mora: Hindi for Kids and Mora: English for Kids, learning apps for children by Murlidhar Creation.">
-  <style>
-    :root {
-      --bg: #fffaf3;
-      --card: #ffffff;
-      --ink: #2b2346;
-      --sub: #6b6487;
-      --accent: #7c5cff;
-      --line: #ece6f7;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #17142a;
-        --card: #211d38;
-        --ink: #f1eefc;
-        --sub: #b9b2d6;
-        --accent: #a995ff;
-        --line: #332d52;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
-    }
-    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-    header { margin-bottom: 28px; }
-    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .02em; margin: 0; }
-    h1 { font-size: 2rem; line-height: 1.2; margin: 6px 0 8px; }
-    .meta { color: var(--sub); margin: 0; }
-    section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 20px 22px;
-      margin: 16px 0;
-    }
-    h2 { font-size: 1.2rem; margin: 0 0 8px; }
-    p { margin: 8px 0; }
-    ul { margin: 8px 0; padding-left: 22px; }
-    li { margin: 4px 0; }
-    a { color: var(--accent); }
-    .summary { border-color: var(--accent); }
-    footer { color: var(--sub); font-size: .9rem; margin-top: 28px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Mora apps – Murlidhar Creation</title>
+<meta name="description" content="How Mora: Hindi for Kids and Mora: English for Kids handle information. Designed for children: no accounts, progress and recordings stay on the device, and ads are child-directed and non-personalised.">
+<link rel="canonical" href="https://murlidharcreation.net/mora/privacy/">
+<style>
+  :root {
+    --ink: #202124;
+    --sub: #5f6368;
+    --line: #dadce0;
+    --soft: #f8f9fa;
+    --link: #1a73e8;
+    --focus: #174ea6;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { margin: 0; background: #ffffff; color: var(--ink); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-text-size-adjust: 100%; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+
+  .bar { position: sticky; top: 0; z-index: 2; background: #ffffff; border-bottom: 1px solid var(--line); }
+  .bar-in { max-width: 1160px; margin: 0 auto; padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .brand { color: var(--ink); font-size: 18px; font-weight: 500; letter-spacing: -.01em; white-space: nowrap; }
+  .brand span { color: var(--sub); font-weight: 400; }
+  .bar nav { display: flex; gap: 20px; font-size: 14px; }
+  .bar nav a { color: var(--sub); }
+  .bar nav a[aria-current] { color: var(--ink); font-weight: 500; }
+
+  .hero { border-bottom: 1px solid var(--line); background: var(--soft); }
+  .hero-in { max-width: 1160px; margin: 0 auto; padding: 48px 24px 40px; }
+  .kicker { margin: 0 0 8px; color: var(--sub); font-size: 14px; letter-spacing: .02em; }
+  h1 { margin: 0; font-size: 40px; line-height: 1.15; font-weight: 400; letter-spacing: -.02em; }
+  .dates { margin: 14px 0 0; color: var(--sub); font-size: 14px; }
+
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 56px; }
+  .toc { position: sticky; top: 84px; align-self: start; max-height: calc(100vh - 100px); overflow: auto; padding: 32px 0; font-size: 14px; }
+  .toc summary { margin: 0 0 10px; font-weight: 500; cursor: pointer; list-style: none; }
+  .toc summary::-webkit-details-marker { display: none; }
+  .toc summary::after { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 0 3px 10px; border-right: 1.5px solid var(--sub); border-bottom: 1.5px solid var(--sub); transform: rotate(45deg); }
+  .toc details[open] summary::after { transform: rotate(-135deg); margin-bottom: -1px; }
+  .toc ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--line); }
+  .toc li a { display: block; padding: 6px 0 6px 16px; margin-left: -1px; border-left: 2px solid transparent; color: var(--sub); line-height: 1.4; }
+  .toc li a:hover { color: var(--ink); text-decoration: none; border-left-color: var(--line); }
+
+  article { padding: 32px 0 80px; max-width: 760px; }
+  .lead { font-size: 18px; line-height: 1.6; margin: 0 0 8px; }
+  h2 { margin: 52px 0 12px; font-size: 26px; line-height: 1.25; font-weight: 400; letter-spacing: -.01em; }
+  h3 { margin: 28px 0 8px; font-size: 18px; font-weight: 500; }
+  p, li { margin: 0 0 12px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li::marker { color: var(--sub); }
+  strong { font-weight: 600; }
+  .note { color: var(--sub); font-size: 14px; }
+  code { font-size: 13px; background: var(--soft); padding: 1px 5px; border-radius: 4px; }
+
+  .points { margin: 24px 0 8px; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .points li { margin: 0; padding: 14px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 210px 1fr; gap: 20px; }
+  .points b { font-weight: 500; }
+
+  .table { width: 100%; overflow-x: auto; margin: 12px 0 20px; border: 1px solid var(--line); border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.5; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  th { background: var(--soft); font-weight: 500; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 150px; }
+
+  footer { border-top: 1px solid var(--line); background: var(--soft); }
+  .foot-in { max-width: 1160px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--sub); font-size: 14px; }
+  .foot-in nav { display: flex; gap: 20px; flex-wrap: wrap; }
+  .foot-in a { color: var(--sub); }
+
+  @media (max-width: 900px) {
+    .wrap { grid-template-columns: minmax(0, 1fr); gap: 0; }
+    .toc { position: static; max-height: none; padding: 24px 0 16px; border-bottom: 1px solid var(--line); }
+    article { padding-top: 8px; }
+    h1 { font-size: 32px; }
+    .hero-in { padding: 36px 24px 28px; }
+  }
+  @media (max-width: 600px) {
+    .bar-in, .hero-in, .wrap, .foot-in { padding-left: 16px; padding-right: 16px; }
+    .bar nav { display: none; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; margin-top: 40px; }
+    .points li { grid-template-columns: 1fr; gap: 2px; }
+  }
+  @media print {
+    .bar, .toc, footer nav { display: none; }
+    .wrap { display: block; }
+    a { color: var(--ink); }
+  }
+</style>
 </head>
 <body>
-<main>
-  <header>
-    <p class="eyebrow">Murlidhar Creation</p>
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="https://murlidharcreation.net/">Murlidhar Creation <span>| Privacy</span></a>
+    <nav aria-label="Site">
+      <a href="https://murlidharcreation.net/">Home</a>
+      <a href="https://murlidharcreation.net/mora/privacy/" aria-current="page">Mora Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-in">
+    <p class="kicker">Mora: Hindi for Kids · Mora: English for Kids</p>
     <h1>Privacy Policy</h1>
-    <p class="meta">For <strong>Mora: Hindi for Kids</strong> and <strong>Mora: English for Kids</strong> (the “apps”)<br>
-    Effective date: 11 November 2026</p>
-  </header>
+    <p class="dates">Effective November 11, 2026 &nbsp;·&nbsp; Last updated November 15, 2026</p>
+  </div>
+</section>
 
-  <section class="summary">
-    <h2>In short</h2>
-    <ul>
-      <li>The apps teach Hindi and English to beginners of any age. Because many learners are young children (from about 3 years old), often learning with a parent or carer, we designed them to be safe for children and treat every user as a child.</li>
-      <li>There are <strong>no accounts and no sign-in</strong>. We do not ask for an email address, phone number or any other contact details.</li>
-      <li>Your child’s name, learning progress and voice recordings are <strong>stored only on your device</strong>. We do not receive, see or upload them.</li>
-      <li>The apps are free and show <strong>ads from Google AdMob</strong>, set up for children: no personalised or interest-based ads, family-friendly content only.</li>
-      <li>We do not sell any data, and we use no analytics or tracking tools of our own.</li>
-    </ul>
-  </section>
+<div class="wrap">
+  <aside class="toc" aria-label="On this page">
+    <details id="toc" open>
+    <summary>On this page</summary>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#microphone">Microphone and recordings</a></li>
+      <li><a href="#use">How information is used</a></li>
+      <li><a href="#ads">Advertising</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#share">How information is shared</a></li>
+      <li><a href="#permissions">Device permissions</a></li>
+      <li><a href="#safety">Children’s safety</a></li>
+      <li><a href="#retention">Retention and deletion</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#rights">Parents’ rights</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+    </details>
+  </aside>
 
-  <section>
-    <h2>1. Who we are</h2>
-    <p>The apps are made by Murlidhar Creation (“we”, “us”). If you have any question about this policy or your child’s privacy, write to us at
-      <a href="mailto:support@murlidharcreation.net">support@murlidharcreation.net</a>.</p>
-  </section>
+  <article>
+    <section id="overview">
+      <p class="lead">This Privacy Policy explains how information is handled in <strong>Mora: Hindi for Kids</strong> and <strong>Mora: English for Kids</strong> (together, the “Apps”), language-learning apps for young children published by Murlidhar Creation (“Murlidhar Creation”, “we”, “us” or “our”). It is written for parents and guardians.</p>
+      <p>The Apps are designed for children, from about 3 years old, often learning with a parent or carer. Because many of our users are young children, we treat every user as a child and have designed the Apps to collect as little information as possible.</p>
 
-  <section>
-    <h2>2. Information kept on your device only</h2>
-    <p>To work, the apps save the following on your phone or tablet. It never leaves the device through us, and we cannot access it.</p>
-    <ul>
-      <li><strong>Child profiles:</strong> the name (or nickname) and animal picture you choose for each child. Use a first name or nickname; a full name is not needed.</li>
-      <li><strong>Learning progress:</strong> lessons finished, stars, stickers, quiz answers, minutes played each day and game scores, so the app can continue where your child left off and show it to you on the Parents page.</li>
-      <li><strong>Settings:</strong> for example the time of the daily reminder, if you turn it on.</li>
-      <li><strong>Voice recordings:</strong> see section 3.</li>
-    </ul>
-  </section>
+      <h2>Overview</h2>
+      <ul class="points">
+        <li><b>No account</b><span>There is no sign-up or sign-in. We never ask for an email address, phone number or any other contact details.</span></li>
+        <li><b>Everything stays on the device</b><span>Your child’s profile, learning progress and any voice recordings are stored only on your device. We do not receive, upload or have access to them.</span></li>
+        <li><b>Child-safe ads</b><span>The Apps are free and show ads from Google AdMob that are marked as directed to children, non-personalised, and limited to content rated G. The Apps do not use the advertising ID.</span></li>
+        <li><b>Grown-ups only areas</b><span>Settings, the Parents page, family voice recording and external links are behind a grown-ups check.</span></li>
+        <li><b>No sale of data</b><span>We do not sell or share personal information, and we use no analytics or tracking tools of our own.</span></li>
+        <li><b>No purchases or chat</b><span>The Apps have no in-app purchases, no chat and no social features.</span></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>3. Microphone and voice recordings</h2>
-    <p>The apps ask for microphone permission for two features. The microphone is only on while the record button is being held down, the screen shows that it is recording, and recording stops if the app goes into the background.</p>
-    <ul>
-      <li><strong>Speaking practice:</strong> your child can say a word or read a line aloud and hear their own voice played back. This recording is kept only temporarily on the device and is replaced by the next one.</li>
-      <li><strong>Family voice (“Dadi’s Voice” in the Hindi app, “Grandma’s Voice” in the English app):</strong> behind a grown-ups check, a family member can record letters, words and cheers, which the app then plays in lessons instead of its own voice. These recordings are saved on the device until you delete them in the app or uninstall it.</li>
-    </ul>
-    <p>Recordings are <strong>never uploaded</strong> or sent to us or anyone else. If you do not allow the microphone, everything else in the apps still works.</p>
-  </section>
+    <section id="collect">
+      <h2>1. Information we collect</h2>
 
-  <section>
-    <h2>4. Advertising (Google AdMob)</h2>
-    <p>The apps are free because they show ads from Google AdMob, provided by Google. Ads appear only in a few places: after finishing an island or some lessons, a banner on the grown-ups Parents page, and optional reward videos that unlock stars. There are no ads inside lessons, stories or games.</p>
-    <p>Every ad request is set up for children:</p>
-    <ul>
-      <li>marked as <strong>directed to children</strong> and <strong>under the age of consent</strong>, so Google treats it under its rules for children (including the U.S. Children’s Online Privacy Protection Act, COPPA);</li>
-      <li><strong>non-personalised only</strong>: no interest-based ads and no remarketing;</li>
-      <li>limited to ads rated <strong>G</strong> (suitable for all audiences);</li>
-      <li>the apps do not access the device’s advertising ID.</li>
-    </ul>
-    <p>To show and measure ads, prevent fraud and limit how often an ad is shown, Google’s ad software in the app may automatically collect limited technical information, such as the IP address, device type and operating system, app information, and how ads are viewed and tapped. We do not receive information that identifies you or your child. Google handles this information under its own policies:
-      <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
-      <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>.</p>
-  </section>
+      <h3>1.1 Information stored on your device</h3>
+      <p>To work as intended, the Apps save the following information in their own storage on your device. This information is not transmitted to us, and we cannot access it.</p>
+      <div class="table"><table>
+        <thead><tr><th>Category</th><th>What it includes</th><th>Why it is stored</th></tr></thead>
+        <tbody>
+          <tr><td>Child profiles</td><td>The name or nickname and the animal picture you choose for each child. A first name or nickname is enough; a full name is not needed.</td><td>To keep each child’s progress separate on a shared device.</td></tr>
+          <tr><td>Learning progress</td><td>Lessons completed, stars, stickers, quiz answers, game scores, outfits earned, and minutes played each day.</td><td>To continue where your child left off and to show progress to you on the Parents page.</td></tr>
+          <tr><td>Voice recordings</td><td>Speaking-practice recordings and family voice recordings. See <a href="#microphone">section 2</a>.</td><td>To play your child’s or a family member’s voice back in the App.</td></tr>
+          <tr><td>Settings</td><td>The time of the optional daily reminder and other preferences.</td><td>To remember your choices.</td></tr>
+        </tbody>
+      </table></div>
 
-  <section>
-    <h2>5. Notifications</h2>
-    <p>A parent can turn on one daily reminder from the Parents page. It is created on the device itself, at the time you choose. We do not run a notification server, and you can turn it off at any time in the app or in your device settings.</p>
-  </section>
+      <h3>1.2 Information collected by our advertising provider</h3>
+      <p>The Apps include the Google Mobile Ads SDK (Google AdMob), provided by Google LLC, which is a Google Play Families self-certified ads SDK. Every ad request is configured for children, as described in <a href="#ads">section 4</a>. To serve ads, the SDK automatically sends limited technical information to Google. We do not receive this information in a form that identifies you or your child.</p>
+      <div class="table"><table>
+        <thead><tr><th>Data type</th><th>Examples</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>Approximate location</td><td>General location derived from the IP address.</td><td>Serving ads appropriate to the region; fraud prevention; legal compliance.</td></tr>
+          <tr><td>Device or other identifiers</td><td>App set ID. <strong>The advertising ID is not accessed</strong>: the Apps do not request the permission to read it.</td><td>Fraud prevention and limiting how often an ad is shown.</td></tr>
+          <tr><td>App interactions</td><td>Ad impressions, ad taps and video views.</td><td>Measuring ad delivery.</td></tr>
+          <tr><td>Diagnostics</td><td>Crash logs and performance data relating to the ads SDK.</td><td>Keeping ad delivery reliable.</td></tr>
+          <tr><td>Device information</td><td>Device model, operating system and version, language, app version.</td><td>Displaying ads correctly.</td></tr>
+        </tbody>
+      </table></div>
+      <p>Google processes this information under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and its rules for child-directed requests. See also <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
 
-  <section>
-    <h2>6. Sharing</h2>
-    <p>We do not share, sell or rent any information about you or your child. On the Family voice page, a grown-up can choose to send an invitation message to a relative using the phone’s own sharing menu. That message goes only to the person and app you pick; we do not see it.</p>
-  </section>
+      <h3>1.3 Text-to-speech</h3>
+      <p>Where a recorded voice is not available, the Apps read lesson words and sentences aloud using your device’s built-in text-to-speech engine. Only lesson content is spoken this way; names and other personal information are never passed to it. The text-to-speech engine is part of your device and is governed by its provider’s terms.</p>
 
-  <section>
-    <h2>7. Keeping children safe</h2>
-    <ul>
-      <li>The Parents and Family voice pages are behind a grown-ups check, so children cannot change settings, record over the app’s voice or leave the app through links there.</li>
-      <li>The apps contain no chat, no social features, no in-app purchases and no links that a child can follow out of the app.</li>
-    </ul>
-  </section>
+      <h3>1.4 Information we do not collect</h3>
+      <p>The Apps do not access the camera, photos, files, contacts, calendar or location, and they do not use the advertising ID. They contain no chat, no social features and no way for a child to communicate with anyone. Lessons, stories and games work offline; an internet connection is used only to show ads.</p>
+    </section>
 
-  <section>
-    <h2>8. Deleting information</h2>
-    <ul>
-      <li>Delete a child’s profile and progress on the Parents page (behind the grown-ups check).</li>
-      <li>Delete individual family recordings on the Family voice page.</li>
-      <li>Uninstalling the app removes everything it stored on the device.</li>
-    </ul>
-    <p>Because we do not hold any of this information ourselves, there is nothing for us to delete on our side. For information collected by Google for advertising, see Google’s privacy policy linked above.</p>
-  </section>
+    <section id="microphone">
+      <h2>2. Microphone and voice recordings</h2>
+      <p>The Apps ask for microphone permission for two features. The microphone is on only while the record button is being held down, the screen shows that recording is in progress, and recording stops if the App goes into the background.</p>
+      <ul>
+        <li><strong>Speaking practice.</strong> Your child can say a word or read a line aloud and hear their own voice played back. This recording is kept only temporarily on the device and is replaced by the next one.</li>
+        <li><strong>Family voice</strong> (“Dadi’s Voice” in the Hindi app, “Grandma’s Voice” in the English app). Behind the grown-ups check, a family member can record letters, words and cheers, which the App then plays in lessons instead of its own voice. These recordings are saved on the device until you delete them in the App or uninstall it.</li>
+      </ul>
+      <p>Recordings are <strong>never uploaded</strong> or sent to us or anyone else. If you do not allow microphone access, every other part of the Apps still works.</p>
+    </section>
 
-  <section>
-    <h2>9. Your rights and questions</h2>
-    <p>Depending on where you live, you may have rights over personal data, such as asking what is held about you or your child, or asking for it to be deleted. As described above, we do not collect or store personal information about you or your child. If you have any question or request, contact us at
-      <a href="mailto:support@murlidharcreation.net">support@murlidharcreation.net</a> and we will reply as soon as we can.</p>
-  </section>
+    <section id="use">
+      <h2>3. How information is used</h2>
+      <p>Information stored on your device is used only by the App on your device, to provide lessons, remember progress, show the Parents page and play recorded voices.</p>
+      <p>Information collected by Google through the Google Mobile Ads SDK is used only to serve and measure non-personalised ads, limit how often an ad is shown, and detect and prevent fraud. It is not used for interest-based advertising, profiling or remarketing.</p>
+      <p>Where the EU General Data Protection Regulation (GDPR) or similar laws apply, the information on your device is processed to provide the service you asked for, and the limited advertising processing relies on our <strong>legitimate interest</strong> in funding free educational apps with contextual, non-personalised ads, with the protections for children described in this policy.</p>
+    </section>
 
-  <section>
-    <h2>10. Changes to this policy</h2>
-    <p>If the apps change in a way that affects your privacy, we will update this page and its effective date before the change reaches the apps. If we ever wanted to collect personal information from children, we would ask for a parent’s consent first.</p>
-  </section>
+    <section id="ads">
+      <h2>4. Advertising</h2>
+      <h3>4.1 How ads are configured</h3>
+      <p>Every ad request from the Apps is:</p>
+      <ul>
+        <li>tagged as <strong>directed to children</strong> (<code>tagForChildDirectedTreatment</code>), so Google treats it under its policies for children, including the U.S. Children’s Online Privacy Protection Act (COPPA);</li>
+        <li>tagged as from a user <strong>under the age of consent</strong> (<code>tagForUnderAgeOfConsent</code>), for users in the EEA, the UK and Switzerland;</li>
+        <li><strong>non-personalised only</strong>: no interest-based ads, no remarketing and no profiling;</li>
+        <li>limited to ads rated <strong>G</strong> (suitable for all audiences) under Google’s maximum ad content rating.</li>
+      </ul>
+      <h3>4.2 Where ads appear</h3>
+      <ul>
+        <li><strong>Interstitial ads</strong>, full-screen ads shown occasionally at a natural break: after finishing an island, or after some lessons. Ads never appear inside lessons, stories or games.</li>
+        <li><strong>A banner ad</strong> on the Parents page only, which is behind the grown-ups check.</li>
+        <li><strong>Rewarded videos</strong>, which play only when chosen, to earn extra stars or outfits for Mor, with a daily limit. Watching them is always optional.</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>© 2026 Murlidhar Creation · <a href="https://www.murlidharcreation.net/">murlidharcreation.net</a> · <a href="mailto:support@murlidharcreation.net">support@murlidharcreation.net</a></p>
-  </footer>
-</main>
+    <section id="notifications">
+      <h2>5. Notifications</h2>
+      <p>A parent can turn on one daily reminder from the Parents page. It is scheduled on the device itself, at the time you choose; we do not run a notification server and receive no information about it. You can turn it off at any time in the App or in your device settings.</p>
+    </section>
+
+    <section id="share">
+      <h2>6. How information is shared</h2>
+      <p>We do not sell, rent, trade or share personal information about you or your child.</p>
+      <p>On the family voice page, behind the grown-ups check, a parent can choose to send an invitation message to a relative using the device’s own sharing menu. The message goes only to the person and app you choose, and we do not see it.</p>
+      <p>The only third party that receives information through the Apps is <strong>Google LLC</strong>, as our advertising provider, as described in <a href="#collect">section 1.2</a>.</p>
+    </section>
+
+    <section id="permissions">
+      <h2>7. Device permissions</h2>
+      <p>The Apps request only the permissions they need.</p>
+      <div class="table"><table>
+        <thead><tr><th>Permission</th><th>Why it is used</th></tr></thead>
+        <tbody>
+          <tr><td>Microphone</td><td>Speaking practice and family voice recording, only while the record button is held. Optional.</td></tr>
+          <tr><td>Notifications</td><td>The optional daily reminder, if a parent turns it on.</td></tr>
+          <tr><td>Audio settings</td><td>To play recorded and spoken audio clearly through the speaker.</td></tr>
+          <tr><td>Internet and network state</td><td>To request and display ads.</td></tr>
+          <tr><td>Vibration</td><td>Gentle haptic feedback during activities.</td></tr>
+          <tr><td>Keep awake (wake lock)</td><td>Used by the Google Mobile Ads SDK to play video ads without interruption.</td></tr>
+        </tbody>
+      </table></div>
+      <p>The Apps do not request access to the advertising ID, location, camera, contacts or files.</p>
+    </section>
+
+    <section id="safety">
+      <h2>8. Children’s safety</h2>
+      <ul>
+        <li>The Parents page, family voice recording, settings and all external links (such as this policy and our support email) are behind a grown-ups check, so children cannot change settings, record over the App’s voice or leave the App.</li>
+        <li>The Apps contain no chat, no social features, no user-generated content shared with others and no in-app purchases.</li>
+        <li>We do not knowingly collect personal information from children. The information described in this policy is either kept on the device or, for ads, limited to what Google collects under its child-directed settings.</li>
+      </ul>
+    </section>
+
+    <section id="retention">
+      <h2>9. Retention and deletion</h2>
+      <p>Information stored by the Apps remains on your device until you delete it. You can delete it at any time:</p>
+      <ul>
+        <li>delete a child’s profile and progress on the Parents page;</li>
+        <li>delete individual family voice recordings on the family voice page;</li>
+        <li>clear the App’s data in <strong>Settings → Apps → [App name] → Storage → Clear storage</strong>; or</li>
+        <li>uninstall the App, which removes everything it stored on the device.</li>
+      </ul>
+      <p>We do not keep copies of any of this information, so there is nothing for us to delete on our side. Information collected by Google is retained according to <a href="https://policies.google.com/technologies/retention">Google’s retention policies</a>.</p>
+    </section>
+
+    <section id="security">
+      <h2>10. Security</h2>
+      <p>Because the Apps do not send your child’s information to us, it is not exposed on any server of ours. Information on the device is protected by Android’s app sandboxing and your device’s screen lock. Ad requests made by the Google Mobile Ads SDK are encrypted in transit. No method of storage or transmission is completely secure, but we design the Apps to keep the information they handle to a minimum.</p>
+    </section>
+
+    <section id="transfers">
+      <h2>11. International transfers</h2>
+      <p>Google may process advertising information in countries other than the one you live in, including the United States. Google states that it relies on appropriate safeguards for such transfers, such as the European Commission’s Standard Contractual Clauses; see the <a href="https://policies.google.com/privacy/frameworks">Google privacy frameworks</a> documentation.</p>
+    </section>
+
+    <section id="rights">
+      <h2>12. Parents’ rights</h2>
+      <p>Parents and guardians have rights over their children’s information. Because we do not collect or store information that identifies you or your child, you can exercise most of these rights directly in the App, as described in <a href="#retention">section 9</a>.</p>
+      <h3>12.1 United States (COPPA)</h3>
+      <p>We do not collect personal information from children as defined by the Children’s Online Privacy Protection Act. Ad requests are tagged as child-directed so that Google applies its COPPA protections. If we ever wanted to collect personal information from children, we would first give notice to parents and obtain verifiable parental consent. Parents may contact us at any time with questions or requests about their child’s information.</p>
+      <h3>12.2 European Economic Area, United Kingdom and Switzerland</h3>
+      <p>Under the GDPR and similar laws, you may have rights to access, correct, delete or restrict processing of personal data, to object to processing, and to data portability. You also have the right to lodge a complaint with your local data protection authority. Ad requests are tagged as from users under the age of consent, so no consent form is shown and ads are non-personalised.</p>
+      <h3>12.3 India</h3>
+      <p>Under the Digital Personal Data Protection Act, 2023, the processing of children’s personal data requires verifiable parental consent, and tracking, behavioural monitoring and targeted advertising directed at children are not permitted. The Apps do not collect children’s personal data on our side, and ads are non-personalised and child-directed.</p>
+      <h3>12.4 Making a request</h3>
+      <p>To ask a question or make a request, contact us using the details in <a href="#contact">section 14</a>. We will respond within a reasonable time and in any case within the period required by applicable law.</p>
+    </section>
+
+    <section id="changes">
+      <h2>13. Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time, for example when we change the Apps or when laws change. When we do, we will update the “Last updated” date at the top of this page and publish the updated policy before the change takes effect in the Apps. If we ever wanted to collect personal information from children, we would ask for a parent’s consent first.</p>
+    </section>
+
+    <section id="contact">
+      <h2>14. Contact us</h2>
+      <p>If you have any questions about this Privacy Policy or your child’s privacy, please contact:</p>
+      <p><strong>Murlidhar Creation</strong><br>
+      Email: <a href="mailto:support@murlidharcreation.net">support@murlidharcreation.net</a><br>
+      Website: <a href="https://murlidharcreation.net/">murlidharcreation.net</a></p>
+      <p class="note">This policy applies to Mora: Hindi for Kids (package <code>com.abhaysardhara.mora</code>) and Mora: English for Kids (package <code>com.abhaysardhara.moraenglish</code>) for Android.</p>
+    </section>
+  </article>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <span>© 2026 Murlidhar Creation</span>
+    <nav aria-label="Footer">
+      <a href="https://murlidharcreation.net/">Home</a>
+      <a href="#overview">Privacy Policy</a>
+      <a href="mailto:support@murlidharcreation.net">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  // The contents list starts open on wide screens and folded on phones, where it would fill the first screen.
+  if (window.matchMedia('(max-width: 900px)').matches) document.getElementById('toc').open = false;
+</script>
+
 </body>
 </html>
